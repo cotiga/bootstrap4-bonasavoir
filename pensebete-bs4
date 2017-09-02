@@ -1,0 +1,63 @@
+# BOOTSTRAP 4
+# BON A SAVOIR
+
+.mx-auto           remplace    .center-block
+.img-fluid.        remplace    .img-responsive
+.rounded           remplace    .img-rounded
+.rounded-circle    remplace    .img-circle
+.navbar-light      remplace    .navbar-default
+.mx-auto           remplace    .center-block
+
+.card              remplace    .panel
+.card-header       remplace    .panel-heading
+.card-body         remplace    .panel-body
+.card-title        remplace    .panel-title
+.card-footer       remplace    .panel-footer
+.card-title        remplace    .panel-title
+
+.panel-default     abandonné
+
+.panel-primary,
+.panel-success,
+.panel-info,
+.panel-warning,
+.panel-danger      abandonné. Utilisez les nouvelles classes : .bg-, .text-, .border
+
+# xs sm md lg xl
+.col-lg-6          remplace    .col-md-6
+.col-6 = .col-xs-6 (pas besoin du -xs pour les colonnes xs)
+
+# affix (faisant appel à jquery) semble etre abandonné pour être remplacer par un standart HTML5 : position:sticky
+# http://html5please.com/#sticky
+
+# Reboot remplace Normalize
+# https://getbootstrap.com/docs/4.0/content/reboot/
+
+# Alignement des text suivant le breakpoint
+.text-{sm,md,lg,xl}-{left,center,right}
+# ex. :
+class='text-sm-left text-lg-center text-lg-right'
+
+# NOUVEAU
+d = display
+.d-none
+.d-{sm,md,lg,xl}-none).
+
+# MARGIN
+mt = margin-top
+mr = margin-right
+mb = margin-bottom
+ml = margin-left
+mx = left-auto & right-auto
+my = top-auto & bottom-auto
+m  = Les 4 bords
+
+mx-auto = centrer horizontalement
+
+# PADDING
+idem margin, remplacer m par p
+pt = padding-top
+...
+
+# MISE EN AVANT DU FLEX
+# https://getbootstrap.com/docs/4.0/utilities/flex/
