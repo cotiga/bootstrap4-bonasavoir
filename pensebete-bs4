@@ -1,62 +1,82 @@
 # BOOTSTRAP 4
 # BON A SAVOIR
 
-.mx-auto           remplace    .center-block
 .img-fluid.        remplace    .img-responsive
+.mx-auto           remplace    .center-block
+.navbar-light      remplace    .navbar-default
 .rounded           remplace    .img-rounded
 .rounded-circle    remplace    .img-circle
-.navbar-light      remplace    .navbar-default
-.mx-auto           remplace    .center-block
 
-.card              remplace    .panel
-.card-header       remplace    .panel-heading
-.card-body         remplace    .panel-body
-.card-title        remplace    .panel-title
-.card-footer       remplace    .panel-footer
-.card-title        remplace    .panel-title
+CARD
+	PANEL
+		.card              remplace    .panel
+		.card-header       remplace    .panel-heading
+		.card-body         remplace    .panel-body
+		.card-title        remplace    .panel-title
+		.card-footer       remplace    .panel-footer
+		.card-title        remplace    .panel-title
 
-.panel-default     abandonné
-.panel-primary,
-.panel-success,
-.panel-info,
-.panel-warning,
-.panel-danger      abandonné. Utilisez les nouvelles classes : .bg-, .text-, .border
+		.panel-default     abandonné
+		.panel-primary,
+		.panel-success,
+		.panel-info,
+		.panel-warning,
+		.panel-danger      abandonné.
+		Utilisez les classes : .bg-, .text-, .border ... pour personnaliser "card"
+	/PANEL
+/ CARD
+
+FORM
+  .has-danger remplace    .has-error
+/FORM
 
 # xs sm md lg xl
 .col-lg-6          remplace    .col-md-6
 .col-6 = .col-xs-6 (pas besoin du -xs pour les colonnes xs)
 
-# affix (faisant appel à jquery) semble etre abandonné pour être remplacer par un standart HTML5 : position:sticky
+# affix (faisant appel à jquery) est abandonné et remplacer par un standart HTML5 : position: sticky;
 # http://html5please.com/#sticky
 
 # Reboot remplace Normalize
 # https://getbootstrap.com/docs/4.0/content/reboot/
 
-# Alignement des text suivant le breakpoint
+# Alignement du texte suivant le breakpoint
 .text-{sm,md,lg,xl}-{left,center,right}
-# ex. :
-class='text-sm-left text-lg-center text-lg-right'
+# EXEMPLE :
+class='text-md-left text-lg-center text-xl-right'
 
 # NOUVEAU
-d = display
+# d = display
 .d-none
 .d-{sm,md,lg,xl}-none).
 
-# MARGIN
-mt = margin-top
-mr = margin-right
-mb = margin-bottom
-ml = margin-left
-mx = left-auto & right-auto
-my = top-auto & bottom-auto
-m  = Les 4 bords
+MARGIN & PADDING
+	UNITE
+  	1 = 0.25 rem
+	  2 = 0.5 rem
+  	3 = 1 rem
+	  4 = 1.5 rem
+  	5 = 3 rem
+	/UNITE
+  MARGIN
+	  mt = margin-top
+  	mr = margin-right
+	  mb = margin-bottom
+  	ml = margin-left
+	  mx = left-auto & right-auto
+  	my = top-auto & bottom-auto
+	  m  = Les 4 bords
+  	mx-auto = centrer horizontalement
+	  # EXEMPLE :
+  	.mb-3 = margin-bottom: 1rem !important;
+	/MARGIN
+	PADDING
+  	# idem margin, remplacer m par p
+	  pt = padding-top
+	  # ...
+	/PADDING
+/MARGIN & PADDING
 
-mx-auto = centrer horizontalement
-
-# PADDING
-idem margin, remplacer m par p
-pt = padding-top
-...
-
-# MISE EN AVANT DU FLEX
-# https://getbootstrap.com/docs/4.0/utilities/flex/
+FLEX
+  # https://getbootstrap.com/docs/4.0/utilities/flex/
+/FLEX
