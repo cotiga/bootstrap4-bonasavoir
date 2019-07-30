@@ -1,11 +1,42 @@
 # BOOTSTRAP 4
 # BON A SAVOIR
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+RESPONSIVE SUIVANT BREAKPOINTS
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 .img-fluid.        remplace    .img-responsive
 .mx-auto           remplace    .center-block
 .navbar-light      remplace    .navbar-default
 .rounded           remplace    .img-rounded
 .rounded-circle    remplace    .img-circle
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 CARD
 	PANEL
@@ -26,9 +57,13 @@ CARD
 	/PANEL
 / CARD
 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
 FORM
-  .has-danger remplace    .has-error
+	.has-danger        remplace    .has-error
 /FORM
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 # xs sm md lg xl
 .col-lg-6          remplace    .col-md-6
@@ -38,7 +73,7 @@ FORM
 # http://html5please.com/#sticky
 
 # Reboot remplace Normalize
-# https://getbootstrap.com/docs/4.0/content/reboot/
+# https://getbootstrap.com/docs/4.1/content/reboot/
 
 # Alignement du texte suivant le breakpoint
 .text-{sm,md,lg,xl}-{left,center,right}
@@ -51,32 +86,35 @@ class='text-md-left text-lg-center text-xl-right'
 .d-{sm,md,lg,xl}-none).
 
 MARGIN & PADDING
+
 	UNITE
-  	1 = 0.25 rem
-	  2 = 0.5 rem
-  	3 = 1 rem
-	  4 = 1.5 rem
-  	5 = 3 rem
-	/UNITE
-  MARGIN
-	  mt = margin-top
-  	mr = margin-right
-	  mb = margin-bottom
-  	ml = margin-left
-	  mx = left-auto & right-auto
-  	my = top-auto & bottom-auto
-	  m  = Les 4 bords
-  	mx-auto = centrer horizontalement
-	  # EXEMPLE :
-  	.mb-3 = margin-bottom: 1rem !important;
+	(par défaut, 1rem = 16px)
+	1 = 0.25 rem
+	2 = 0.5 rem
+	3 = 1 rem
+	4 = 1.5 rem
+	5 = 3 rem
+
+	MARGIN
+	mt = margin-top
+	mr = margin-right
+	mb = margin-bottom
+	ml = margin-left
+	mx = left-auto & right-auto
+	my = top-auto & bottom-auto
+	m  = Les 4 bords
+	mx-auto = centrer horizontalement
+
+	# EXEMPLE :
+	.mb-3 = margin-bottom: 1rem !important;
 	/MARGIN
+
 	PADDING
-  	# idem margin, remplacer m par p
-	  pt = padding-top
-	  # ...
+	# idem margin, remplacer m par p
+	pt = padding-top
+	# ...
 	/PADDING
-/MARGIN & PADDING
 
 FLEX
-  # https://getbootstrap.com/docs/4.0/utilities/flex/
+# https://getbootstrap.com/docs/4.1/utilities/flex/
 /FLEX
